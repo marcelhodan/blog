@@ -4,6 +4,13 @@
 	<groupId>de.marcelhodan.blog</groupId>
 	<artifactId>jetty-embedded</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<dependencies>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-server</artifactId>
+			<version>9.4.6.v20170531</version>
+		</dependency>
+	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
