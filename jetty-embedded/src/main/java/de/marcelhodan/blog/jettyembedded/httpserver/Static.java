@@ -21,5 +21,8 @@ public class Static {
 		handlers.setHandlers(new Handler[] { resource_handler });
 		server.setHandler(handlers);
 
+		// Start the server
+		server.start();
+		server.join();
 	}
 }
