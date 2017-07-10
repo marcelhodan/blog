@@ -13,6 +13,7 @@ public class Static {
 		// Configure ResourceHandler
 		ResourceHandler resource_handler = new ResourceHandler();
 		resource_handler.setDirectoriesListed(true);
+		resource_handler.setWelcomeFiles(new String[] { "index.html" });
 		resource_handler.setResourceBase("./src/webapp");
 
 		// Add the ResourceHandler to the server.
