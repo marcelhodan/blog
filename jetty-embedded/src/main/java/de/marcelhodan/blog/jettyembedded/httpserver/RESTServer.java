@@ -1,25 +1,12 @@
 package de.marcelhodan.blog.jettyembedded.httpserver;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 
-public class RESTServer {
-	@Path("/dummy")
-	public class DummyClass {
-		@GET
-		@Path("test")
-		@Produces(MediaType.TEXT_PLAIN)
-		public String test() {
-			return "my test";
-		}
-	}
+import de.marcelhodan.blog.jettyembedded.httpserver.servlet.DummyClass;
 
+public class RESTServer {
 	public static void main(String[] args) throws Exception {
 		// Create Server
 		Server server = new Server(8090);
