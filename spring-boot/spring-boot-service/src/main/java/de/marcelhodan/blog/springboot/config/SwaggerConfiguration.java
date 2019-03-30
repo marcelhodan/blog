@@ -1,0 +1,33 @@
+package de.marcelhodan.blog.springboot.config;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@Configuration
+@EnableSwagger2
+public class SwaggerConfiguration implements WebMvcConfigurer {
+    private static final Logger LOGGER = LoggerFactory.getLogger(SwaggerConfiguration.class);
+
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+	LOGGER.debug("Add ViewControllerRegistry for SWAGGER2 api");
+	registry.addRedirectViewController("/api/v2/api-docs", "/v2/api-docs");
+	registry.addRedirectViewController("/api/swagger-resources/configuration/ui", "/swagger-resources/configuration/ui");
+	registry.addRedirectViewController("/api/swagger-resources/configuration/security", "/swagger-resources/configuration/security");
+	registry.addRedirectViewController("/api/swagger-resources", "/swagger-resources");
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+	LOGGER.debug("Add RequestHandlerRegistry for SWAGGER2");
+	registry.addResourceHandler("/api/swagger-ui.html**").addResourceLocations("classpath:/META-INF/resources/swagger-ui.html");
+	registry.addResourceHandler("/api/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
+    }
+
+}
