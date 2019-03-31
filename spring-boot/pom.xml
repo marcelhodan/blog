@@ -123,6 +123,14 @@
 				<version>2.0</version>
 			</dependency>
 			<!-- LIBS END -->
+			<!-- JOINFACES -->
+			<dependency>
+				<groupId>org.joinfaces</groupId>
+				<artifactId>joinfaces-dependencies</artifactId>
+				<version>3.3.0-rc2</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
 			<!-- SWAGGER START -->
 			<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
 			<dependency>
