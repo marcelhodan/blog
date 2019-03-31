@@ -29,13 +29,11 @@ To start the application you can use the following CLI steps to build the projec
 
 
 ## Structure
-#### API
-The API project contains the model(s) and service(s) provided by the service.<br>
-*Further reading* [API readme](spring-boot-api/README.md)
-#### Service
+* [API readme](spring-boot-api/README.md)
+* Service<br>
 The main content and actual work/configuration will be found within the Service project.<br>
 *Further reading* [Service readme](spring-boot-service/README.md)
-#### UI
+* UI<br>
 To add UI elements the UI project will provide the necessary content. <br>
 *Further reading* [UI readme](spring-boot-ui/README.md)
 
