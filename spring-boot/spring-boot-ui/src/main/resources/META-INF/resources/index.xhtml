@@ -40,6 +40,23 @@
 			</p:tab>
 		</p:accordionPanel>
 		
+		<h1>Bean demo</h1>
+		<p:panel header="Hello my friend example">
+			<h:panelGrid columns="2" cellpadding="4">
+				<h:outputText value="First Name: " />
+				<p:inputText id="first-name" value="#{indexBean.firstName}" />
+
+				<h:outputText value="Last Name: " />
+				<p:inputText id="last-name" value="#{indexBean.lastName}" />
+
+				<p:commandButton id="submit" value="Submit" update="greeting"
+					oncomplete="PF('greeting').show()" />
+			</h:panelGrid>
+		</p:panel>
+
+		<p:dialog header="Greeting" widgetVar="greeting" modal="true">
+			<h:outputText id="greeting" value="#{indexBean.showGreeting()}" />
+		</p:dialog>
 	</h:form>
 </h:body>
 </html>
