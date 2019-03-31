@@ -33,9 +33,7 @@ To start the application you can use the following CLI steps to build the projec
 * Service<br>
 The main content and actual work/configuration will be found within the Service project.<br>
 *Further reading* [Service readme](spring-boot-service/README.md)
-* UI<br>
-To add UI elements the UI project will provide the necessary content. <br>
-*Further reading* [UI readme](spring-boot-ui/README.md)
+* [UI readme](spring-boot-ui/README.md)
 
 ## Libraries
 This project uses these libraries/frameworks:
