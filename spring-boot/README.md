@@ -38,3 +38,12 @@ The main content and actual work/configuration will be found within the Service 
 #### UI
 To add UI elements the UI project will provide the necessary content. <br>
 *Further reading* [UI readme](spring-boot-ui/README.md)
+
+## Libraries
+This project uses these libraries/frameworks:
+
+* H2 database
+* Lombok
+* Mapstruct
+* Swagger
+* Joinfaces
