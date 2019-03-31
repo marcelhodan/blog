@@ -47,7 +47,6 @@ public class CarController extends BaseController {
 
     @PostMapping(value = CONTEXT_ADD, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public void addCar(@RequestBody Car carToAdd) {
-	trackApiInteraction(CONTEXT_ADD, carToAdd);
 	LOGGER.info("add {} via {}", carToAdd, fullContextPath(CONTEXT_ADD));
 	repository.save(carMapper.carToCarEntity(carToAdd));
     }
