@@ -7,15 +7,15 @@ For this project only three packages are used to structure the project files:
 1. config<br>
 (see [Configuration](#configuration))
 1. dataaccess<br>
-This package contains all *JPA* related implementations
-    1. application.model<br>
-    package for `JPA` entities used within the application
-    1. mapper<br>
-    `mapstruct` configuration for api-model to jpa-model mapping
-    1. repos<br>
-    contains the spring `CrudRepositoriy` to access the jpa-models 
+-> This package contains all *JPA* related implementations
+    * application.model<br>
+    -> package for `JPA` entities used within the application
+    * mapper<br>
+    -> `mapstruct` configuration for api-model to jpa-model mapping
+    * repos<br>
+    -> contains the spring `CrudRepositoriy` to access the jpa-models 
 1. rest<br>
-This package contains all `RestController` which provide the desired services.
+-> This package contains all `RestController` which provide the desired services.
 
 #### Configuration
 The configuration is placed into the package [config](src/main/java/de/marcelhodan/blog/springboot/config). It contains the main confiration file **SpringConfiguration** and additional files which will be imported separately.
