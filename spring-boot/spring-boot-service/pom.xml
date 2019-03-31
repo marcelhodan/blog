@@ -15,6 +15,10 @@
 			<groupId>de.marcelhodan.blog</groupId>
 			<artifactId>spring-boot-api</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>de.marcelhodan.blog</groupId>
+			<artifactId>spring-boot-ui</artifactId>
+		</dependency>
 		<!-- SPRING -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -57,6 +61,15 @@
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct-processor</artifactId>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<!-- 
+				INFO: this dependency is expected by joinfaces / spring-boot-ui. If not 
+				explicitly listed as dependency the JSP version of the container is not 
+				suitable. ErrorMsg: 'JSP version of the container is older than 2.1 ...' 	
+		    -->
+			<groupId>javax.enterprise</groupId>
+			<artifactId>cdi-api</artifactId>
 		</dependency>
 		<!-- LOGGING -->
 		<dependency>

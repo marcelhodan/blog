@@ -38,6 +38,11 @@
 				<artifactId>spring-boot-service</artifactId>
 				<version>${project.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>de.marcelhodan.blog</groupId>
+				<artifactId>spring-boot-ui</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 			<!-- APPLICATION END -->
 			<!-- SPRING START -->
 			<dependency>
@@ -110,6 +115,12 @@
 				<groupId>org.mapstruct</groupId>
 				<artifactId>mapstruct-processor</artifactId>
 				<version>${version.mapstruct}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/javax.enterprise/cdi-api -->
+			<dependency>
+				<groupId>javax.enterprise</groupId>
+				<artifactId>cdi-api</artifactId>
+				<version>2.0</version>
 			</dependency>
 			<!-- LIBS END -->
 			<!-- SWAGGER START -->
